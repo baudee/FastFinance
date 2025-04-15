@@ -46,5 +46,5 @@ jobs:
         with:
           push: true
           tags:
-            ghcr.io/baudee/FastFinance:latest
+            ghcr.io/baudee/fastfinance:latest
           labels: ${{ steps.meta.outputs.labels }}
