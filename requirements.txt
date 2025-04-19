@@ -1,1 +1,2 @@
 fastapi[standard]==0.115.12
+yfinance==0.2.55
