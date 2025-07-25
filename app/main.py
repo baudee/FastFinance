@@ -32,4 +32,4 @@ def details(symbol: str):
 @app.get("/currency/{from_currency}/{to_currency}")
 def currency(from_currency: str, to_currency: str):
     symbol = f"{from_currency.upper()}{to_currency.upper()}=X"
-    return get_ticker_info(symbol)
+    return get_ticker_info(symbol).get("regularMarketPrice")
